@@ -1,0 +1,8 @@
+https://www.w3schools.com/xml/
+-XML
+
+https://www.w3schools.com/js/js_json_intro.asp
+-JSON
+
+https://docs.oracle.com/javase/tutorial/
+-JAVA
