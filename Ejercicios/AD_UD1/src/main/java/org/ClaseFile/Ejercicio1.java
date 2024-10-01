@@ -1,7 +1,7 @@
-package org.example;
+package org.ClaseFile;
 
-import javax.swing.*;
-import java.io.*;
+import java.io.File;
+import java.io.IOException;
 import java.util.Date;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or

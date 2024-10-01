@@ -1,7 +1,5 @@
-package org.example;
+package org.Flujos;
 
-import java.io.Console;
-import java.util.Locale;
 import java.util.Scanner;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
