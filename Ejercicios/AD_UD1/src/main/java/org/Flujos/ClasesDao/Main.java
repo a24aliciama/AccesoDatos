@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        ClasificacionFileDAO clasificacionDAO = new ClasificacionFileDAO(Paths.get("./clasificaciones"));
+        ClasificacionFileDAO clasificacionDAO = new ClasificacionFileDAO(Paths.get("./src/main/resources/clasificacionesDAO"));
 
         // Clasificación por defecto (Liga ACB)
         Clasificacion clasificacion = new Clasificacion("Liga ACB");

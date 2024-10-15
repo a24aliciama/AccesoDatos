@@ -45,7 +45,7 @@ public class Equipo implements Comparable<Equipo>, Serializable {
 
     // Atributos derivados
     public int getPuntos() {
-        return victorias * 2;
+        return victorias - derrotas;
     }
 
     public int getPartidosJugados() {
@@ -82,7 +82,7 @@ public class Equipo implements Comparable<Equipo>, Serializable {
 
     @Override
     public String toString() {
-        return String.format("%s | Victorias: %d, Derrotas: %d, Puntos: %d, Diferencia: %d",
-                nombre, victorias, derrotas, getPuntos(), getDiferenciaDePuntos());
+        return String.format("%s | Partidos: %d, Victorias: %d, Derrotas: %d, PuntosVictorias: %d, DiferenciaPuntos: %d",
+                nombre, getPartidosJugados(), victorias, derrotas, getPuntos(), getDiferenciaDePuntos());
     }
 }
