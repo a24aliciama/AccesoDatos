@@ -8,7 +8,7 @@ public class Clasificacion implements Serializable {
     private Set<Equipo> equipos;
     private String competicion;
 
-    // Constructor por defecto con la competición "Liga ACB"
+    // Constructor competición "Liga ACB"
     public Clasificacion() {
         this("Liga ACB");
     }
@@ -19,20 +19,22 @@ public class Clasificacion implements Serializable {
         this.equipos = new TreeSet<>();
     }
 
-    // Métod para añadir equipo
+    // añade un equipo
     public boolean addEquipo(Equipo equipo) {
         return equipos.add(equipo);
     }
 
-    // Métod para eliminar equipo
+    // elimina equipo
     public boolean removeEquipo(Equipo equipo) {
         return equipos.remove(equipo);
     }
 
+    // devuelve el equipo
     public Set<Equipo> getEquipos() {
         return equipos;
     }
 
+    // devuelve la competicion
     public String getCompeticion() {
         return competicion;
     }

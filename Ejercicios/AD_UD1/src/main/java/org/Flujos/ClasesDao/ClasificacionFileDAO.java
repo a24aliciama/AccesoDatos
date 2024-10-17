@@ -2,7 +2,6 @@ package org.Flujos.ClasesDao;
 
 import java.io.*;
 import java.nio.file.*;
-import java.util.Set;
 import java.util.List;
 
 public class ClasificacionFileDAO implements DAO<Clasificacion, String> {
@@ -36,9 +35,34 @@ public class ClasificacionFileDAO implements DAO<Clasificacion, String> {
         return null;
     }
 
+    //para cuando implemente añadir distintas clasificaciones
     @Override
     public List<Clasificacion> getAll() {
-        // Este método podría implementarse si fuera necesario listar todas las clasificaciones guardadas
+        if (ruta.toFile().exists() && ruta.toFile().isDirectory()) {
+            // Filtrar los archivos con la extensión .dat
+            File[] archivos = ruta.toFile().listFiles((dir, nombre) -> nombre.toLowerCase().endsWith(".dat"));
+
+            // Verificar si hay archivos .dat
+            if (archivos != null && archivos.length > 0) {
+                // leer cada archivo .dat
+                for (File archivo : archivos) {
+                    System.out.println("Leyendo archivo: " + archivo.getName());
+                    try (BufferedReader lector = new BufferedReader(new FileReader(archivo))) {
+                        String linea;
+                        // Leer el archivo
+                        while ((linea = lector.readLine()) != null) {
+                            System.out.println(linea);
+                        }
+                    } catch (IOException e) {
+                        System.err.println(e + "Error al leer el archivo: " + archivo.getName());
+                    }
+                }
+            } else {
+                System.out.println("No se encontraron archivos .dat en la carpeta.");
+            }
+        } else {
+            System.out.println("La carpeta especificada no existe o no es un directorio.");
+        }
         return null;
     }
 
