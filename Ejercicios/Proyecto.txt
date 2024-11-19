@@ -1,0 +1,8 @@
+Base de datos
+o
+ficheiros almacen local dao
+un json y conversión a json
+
+
+hacemos en java, un jar pryect. Maven build. 
+pryect extructure, añadir artefactor (jar) dependencia de modulos (no quiero un main) 
