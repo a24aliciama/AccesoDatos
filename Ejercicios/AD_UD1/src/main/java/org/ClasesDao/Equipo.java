@@ -1,4 +1,4 @@
-package org.Flujos.ClasesDao;
+package org.ClasesDao;
 import java.io.Serializable;
 
 public class Equipo implements Comparable<Equipo>, Serializable {

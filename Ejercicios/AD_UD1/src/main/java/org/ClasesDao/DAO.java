@@ -1,4 +1,4 @@
-package org.Flujos.ClasesDao;
+package org.ClasesDao;
 
 import java.util.List;
 

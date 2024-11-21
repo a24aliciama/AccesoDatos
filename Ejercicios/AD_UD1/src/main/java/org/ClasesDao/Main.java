@@ -1,10 +1,10 @@
-package org.Flujos.ClasesDao;
+package org.ClasesDao;
 
 import java.nio.file.Paths;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
+   public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         ClasificacionFileDAO clasificacionDAO = new ClasificacionFileDAO(Paths.get("./src/main/resources/clasificacionesDAO"));
 

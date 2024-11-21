@@ -1,4 +1,4 @@
-package org.Flujos;
+package org.ClaseDesorden.Flujos;
 
 import java.util.Scanner;
 
