@@ -1,0 +1,8 @@
+https://docs.jboss.org/hibernate/orm/current/javadocs/
+Hibernate Javadoc (6.6.4.Final)
+
+https://docs.jboss.org/hibernate/orm/current/querylanguage/html_single/Hibernate_Query_Language.html
+A Guide to Hibernate Query Language
+
+https://manuais.pages.iessanclemente.net/plantillas/dam/ad/
+apuntes

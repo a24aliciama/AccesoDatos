@@ -1,0 +1,7 @@
+https://www.youtube.com/watch?v=wcaiKgQU6VE
+What Is SQL Injection?
+
+
+https://jossjack.wordpress.com/2014/06/22/patron-de-diseno-mvc-modelo-vista-controlador-y-dao-data-access-object/#:~:text=Patron%20MVC&text=Entonces%20se%20trata%20de%20realizar,en%20la%20l%C3%B3gica%20de%20negocio.
+Patrón de Diseño MVC (Modelo Vista Controlador) y DAO (Data Access Object)
+
