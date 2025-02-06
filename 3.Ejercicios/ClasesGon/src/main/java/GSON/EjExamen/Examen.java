@@ -55,10 +55,14 @@ public class Examen {
     public String toStringBuilder(){
         StringBuilder sb = new StringBuilder();
         sb.append("Examen{");
-                sb.append("materia='" + materia + "\'");
-                sb.append(", fecha=" + fecha );
-                sb.append(", participantes= " + participantes);
-                sb.append("}");
+                sb.append("materia='")
+                        .append(materia)
+                        .append("\'")
+                        .append(", fecha=")
+                        .append(fecha)
+                        .append(", participantes= ")
+                        .append(participantes)
+                        .append("}");
 
                 return sb.toString();
     }

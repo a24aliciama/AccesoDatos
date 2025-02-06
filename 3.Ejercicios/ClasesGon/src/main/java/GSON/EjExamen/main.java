@@ -3,12 +3,15 @@ package GSON.EjExamen;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.util.Date;
 
 public class main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
         Date fecha = Date.from(LocalDateTime.of
                 (2024, 2, 6, 10, 2)
@@ -29,5 +32,8 @@ public class main {
         System.out.println(frase);
 
 
+        BufferedWriter bw = new BufferedWriter(new FileWriter("examenJson.json"));
+        bw.write(frase);
+        bw.close();
     }
 }
